@@ -1,18 +1,9 @@
 const { src, series, parallel, watch } = require('gulp');
-const server = require('gulp-server-livereload');
 
 const fileincludes = require('./tasks/fileinclude');
 const style = require('./tasks/style');
 const clear = require('./tasks/clear');
-
-const startServer = () => {
-	return src('./dist').pipe(
-		server({
-			livereload: true,
-			open: true,
-		}),
-	);
-};
+const startServer = require('./tasks/server');
 
 exports.clear = clear;
 exports.fileincludes = fileincludes;
