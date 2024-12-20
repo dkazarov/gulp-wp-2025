@@ -26,6 +26,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^6.0.0",
     "gulp-server-livereload": "^1.9.2",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.83.0"
   }
 }

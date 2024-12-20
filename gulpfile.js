@@ -7,7 +7,7 @@ const images = require('./tasks/images');
 const startServer = require('./tasks/server');
 
 const watcher = () => {
-	watch('src/**.html', fileincludes);
+	watch('src/html-components/**.html', fileincludes);
 	watch('src/pages/**.html', fileincludes);
 	watch('src/scss/**', style);
 	// watch('src/images/**.{jpg, svg, webp, png}', images);
