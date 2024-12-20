@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/dkazarov/gulp-wp-2025/issues"
   },
-  "homepage": "https://github.com/dkazarov/gulp-wp-2025#readme"
+  "homepage": "https://github.com/dkazarov/gulp-wp-2025#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.0"
+  }
 }
