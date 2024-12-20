@@ -1,0 +1,19 @@
+{
+  "name": "gulp-wp-2025",
+  "version": "1.0.0",
+  "description": "gulp-wp-2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkazarov/gulp-wp-2025.git"
+  },
+  "author": "Dmytro Kazarov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkazarov/gulp-wp-2025/issues"
+  },
+  "homepage": "https://github.com/dkazarov/gulp-wp-2025#readme"
+}
