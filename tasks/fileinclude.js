@@ -2,7 +2,6 @@ const { src, dest } = require('gulp');
 
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
-import webp from 'gulp-webp';
 
 const fileincludes = () => {
 	return src('./src/**.html')
