@@ -1,0 +1,25 @@
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	// font-family: var(--main-font), 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+	flex-grow: 1;
+}
+.footer {
+	margin-top: auto;
+}
