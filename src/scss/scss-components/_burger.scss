@@ -3,6 +3,8 @@
 	width: 30px;
 	height: 25px;
 	cursor: pointer;
+	background-color: transparent;
+	border: none;
 
 	&::before,
 	&::after {

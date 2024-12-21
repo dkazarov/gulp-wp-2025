@@ -2,6 +2,7 @@
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+	background-color: #bdf7c5;
 }
 
 .header__inner {
@@ -10,9 +11,10 @@
 	align-items: center;
 	height: 100px;
 	width: 100%;
-	background-color: skyblue;
 }
 
 .burger {
-	display: none;
+	display: flex-inline;
+	text-align: right;
+	// display: none;
 }

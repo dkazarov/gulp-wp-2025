@@ -7,7 +7,7 @@ const images = () => {
 	return src('./src/images/**/*', { encoding: false })
 		.pipe(newer('./dist/images/**/*'))
 		.pipe(webp())
-		.pipe(dest('./dist/images/'))
+
 		.pipe(src('./src/images/**/*'))
 		.pipe(newer('./dist/images/**/*'))
 		.pipe(

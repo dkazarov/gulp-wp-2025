@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
-const stripCssComments = require('gulp-strip-css-comments');
 
 const style = () => {
 	return (
@@ -12,7 +11,6 @@ const style = () => {
 			.pipe(autoprefixer())
 			// .pipe(cssnano())
 			.pipe(concat('./style.css'))
-			// .pipe(stripCssComments())
 			.pipe(dest('./dist/css', { sourcemaps: false }))
 	);
 };

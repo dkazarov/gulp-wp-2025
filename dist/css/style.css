@@ -36,6 +36,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1;
+  background-color: #bdf7c5;
 }
 
 .header__inner {
@@ -50,11 +51,11 @@ body {
           align-items: center;
   height: 100px;
   width: 100%;
-  background-color: skyblue;
 }
 
 .burger {
-  display: none;
+  display: flex-inline;
+  text-align: right;
 }
 
 .hero {
@@ -64,8 +65,9 @@ body {
 .footer__inner {
   height: 100px;
   width: 100%;
-  background-color: skyblue;
+  background-color: #bdf7c5;
   padding-top: 40px;
+  text-align: center;
 }
 
 .burger {
@@ -73,6 +75,8 @@ body {
   width: 30px;
   height: 25px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .burger::before, .burger::after {
   content: "";
