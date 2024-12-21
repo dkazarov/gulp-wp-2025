@@ -31,6 +31,11 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "webpack-stream": "^7.0.0"
   }
 }

@@ -7,3 +7,5 @@ export const burgerOpen = () => {
 		burger.classList.toggle('burger--transform');
 	});
 };
+
+console.log('Hello from BURGER!');
