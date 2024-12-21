@@ -1,15 +1,15 @@
 @use 'normalize';
-@use 'variables';
 @use 'fonts';
+@use 'variables';
 @use 'global';
+
 @use 'header';
 @use 'hero';
-
 @use 'footer';
 
 //Vendor
 
-
 // Presets
-
+@use 'mixsins';
+@use './scss-components/presets';
 @use './scss-components/burger';
