@@ -25,6 +25,7 @@
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-sass": "^6.0.0",
     "gulp-server-livereload": "^1.9.2",
     "gulp-webp": "^4.0.1",
