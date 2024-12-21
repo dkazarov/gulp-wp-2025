@@ -1,4 +1,4 @@
-const { src, dest } = require('gulp');
+const { src } = require('gulp');
 const server = require('gulp-server-livereload');
 
 const startServer = () => {

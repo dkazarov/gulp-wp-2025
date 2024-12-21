@@ -2,7 +2,8 @@ const { src, dest } = require('gulp');
 
 const fileinclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
-let webphtml = require('gulp-webp-html-nosvg');
+const webphtml = require('gulp-webp-html-nosvg');
+const strip = require('gulp-strip-comments');
 
 const html = () => {
 	return (
@@ -14,6 +15,7 @@ const html = () => {
 				}),
 			)
 			.pipe(webphtml())
+			.pipe(strip())
 			// .pipe(htmlmin({ collapseWhitespace: true }))
 			.pipe(dest('./dist'))
 	);

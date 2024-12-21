@@ -11,9 +11,9 @@ const startServer = require('./tasks/server');
 const watcher = () => {
 	watch('src/html-components/**.html', html);
 	watch('src/pages/**.html', html);
+	watch('src/*.html', html);
 	watch('src/scss/**', style);
-	// watch('src/images/**.{jpg, svg, webp, png}', images);
-	watch('src/images/**', images);
+	watch('src/images/**.{jpg, svg, webp, png}', images);
 	watch('src/fonts/**', fonts);
 	watch('src/js/**', js);
 };
