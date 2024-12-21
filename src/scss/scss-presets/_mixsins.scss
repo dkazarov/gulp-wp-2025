@@ -1,9 +1,7 @@
-@use 'sass:math';
 @use 'functions' as *;
+@use 'sass:math';
 // Приймає максимальний та мінімальний розмір шрифту
 // Desctop: 48px, Mobile: 16px
-
-// Використовуємо функцію math.div() для обчислення відношення між розмірами шрифтів та ширини вікна
 
 @mixin fluid-text($max: 48, $min: 16) {
 	font-size: fluid($max, $min);
@@ -40,4 +38,20 @@
 	clip-path: inset(100%) !important;
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
+}
+
+@mixin hover($hasActiveEffectOnMobile: true) {
+	@media (any-hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+
+	@if $hasActiveEffectOnMobile {
+		@media (any-hover: hover) {
+			&:active {
+				@content;
+			}
+		}
+	}
 }
