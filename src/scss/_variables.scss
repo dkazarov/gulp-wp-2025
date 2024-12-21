@@ -1,0 +1,21 @@
+@use './scss-presets/functions' as *;
+
+:root {
+	--container-width: #{rem(1110)};
+	--container-padding-x: #{rem(15)};
+
+	--main-font: 'Roboto', sans-serif;
+	--second-font: 'Inter', sans-serif;
+
+	--main-font-color: #000;
+	--secondary-font-color: #3b2d2d;
+
+	--accent-color: #f00;
+	--action-color: #007bff;
+	--secondary-color: #333;
+
+	--main-bg-color: #fff;
+	--secondary-bg-color: #fff;
+
+	--transition-duration: 0.2s;
+}

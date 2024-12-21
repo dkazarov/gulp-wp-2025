@@ -1,3 +1,4 @@
+@use 'mini-reset';
 @use 'normalize';
 @use 'fonts';
 @use 'variables';
@@ -12,4 +13,7 @@
 // Presets
 @use './scss-presets/mixsins';
 @use './scss-presets/functions';
+@use './scss-presets/presets';
+
+// Components
 @use './scss-components/burger';

@@ -1,12 +1,17 @@
+@use 'variables' as *;
+@use './scss-presets/mixsins' as *;
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	height: 100%;
-	// font-family: var(--main-font), 'Open Sans';
+	//Максимальтний та мінімальний розмір шрифта в макеті основного шрифта
+	@include fluid-text(25, 18);
+
+	font-family: var(--main-font), sans-serif;
+	color: var(--main-font-color);
 	font-weight: 400;
-	font-size: 16px;
 }
 .wrapper {
 	display: flex;
@@ -14,8 +19,8 @@ body {
 	min-height: 100vh;
 }
 .container {
-	max-width: 1140px;
-	padding: 0 15px;
+	max-width: var(--container-width);
+	padding: var(--container-padding-x);
 	margin: 0 auto;
 	flex-grow: 1;
 }
