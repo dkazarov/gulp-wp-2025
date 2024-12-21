@@ -4,9 +4,10 @@
 @use 'variables';
 @use 'global';
 
-@use 'header';
-@use 'hero';
-@use 'footer';
+// Block
+@use './block/header';
+@use './block/hero';
+@use './block/footer';
 
 //Vendor
 

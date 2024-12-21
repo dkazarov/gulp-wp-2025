@@ -413,7 +413,8 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 1;
   background-color: #bdf7c5;
@@ -435,10 +436,6 @@ body {
 
 .burger {
   text-align: right;
-}
-
-.hero {
-  padding-top: 100px;
 }
 
 .footer__inner {
