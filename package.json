@@ -12,6 +12,11 @@
 	"browserslist": [
 		"last 3 versions"
 	],
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/dkazarov/gulp-wp-2025.git"
@@ -22,9 +27,12 @@
 		"url": "https://github.com/dkazarov/gulp-wp-2025/issues"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.26.0",
+		"@babel/preset-env": "^7.26.0",
 		"gh-pages": "^6.2.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
+		"gulp-babel": "^8.0.0",
 		"gulp-clean": "^0.4.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-cssnano": "^2.1.3",
