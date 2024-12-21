@@ -13,7 +13,7 @@ const watcher = () => {
 	watch('src/pages/**.html', html);
 	watch('src/*.html', html);
 	watch('src/scss/**', style);
-	watch('src/images/**.{jpg, svg, webp, png}', images);
+	watch('src/images/**', images);
 	watch('src/fonts/**', fonts);
 	watch('src/js/**', js);
 };

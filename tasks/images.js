@@ -4,7 +4,7 @@ const webp = require('gulp-webp');
 var newer = require('gulp-newer');
 
 const images = () => {
-	return src('./src/images/**/*', { encoding: false })
+	return src('./src/images/*', { encoding: false })
 		.pipe(newer('./dist/images/**/*'))
 		.pipe(webp())
 
