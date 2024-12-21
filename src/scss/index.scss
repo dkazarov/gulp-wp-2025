@@ -10,6 +10,6 @@
 //Vendor
 
 // Presets
-@use 'mixsins';
-@use './scss-components/presets';
+@use './scss-presets/mixsins';
+@use './scss-presets/functions';
 @use './scss-components/burger';

@@ -1,27 +1,12 @@
 @use 'sass:math';
+@use 'functions' as *;
 // Приймає максимальний та мінімальний розмір шрифту
 // Desctop: 48px, Mobile: 16px
 
 // Використовуємо функцію math.div() для обчислення відношення між розмірами шрифтів та ширини вікна
 
 @mixin fluid-text($max: 48, $min: 16) {
-	// Значення ширини контейнера
-	$maxViewportWidth: 1400;
-	$minViewportWidth: 320;
-
-	$maxSize: math.div($max, 16);
-	$minSize: math.div($min, 16);
-	$maxWidth: math.div($maxViewportWidth, 16);
-	$minWidth: math.div($minViewportWidth, 16);
-
-	$slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-	$yAxisIntersection: -$minWidth * $slope + $minSize;
-
-	font-size: clamp(
-		#{$minSize * 1rem},
-		#{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-		#{$maxSize * 1rem}
-	);
+	font-size: fluid($max, $min);
 }
 
 // Сховати елемент
