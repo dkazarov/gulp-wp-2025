@@ -1,14 +1,10 @@
 @use 'variables' as *;
-@use './scss-presets/mixsins' as *;
 
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	//Максимальтний та мінімальний розмір шрифта в макеті основного шрифта
-	@include fluid-text(25, 18);
-
 	font-family: var(--main-font), sans-serif;
 	color: var(--main-font-color);
 	font-weight: 400;
@@ -20,7 +16,8 @@ body {
 }
 .container {
 	max-width: var(--container-width);
-	padding: var(--container-padding-x);
+	padding-left: var(--container-padding-x);
+	padding-right: var(--container-padding-x);
 	margin: 0 auto;
 	flex-grow: 1;
 }
