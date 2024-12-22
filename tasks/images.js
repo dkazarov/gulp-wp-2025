@@ -1,7 +1,7 @@
 const { src, dest } = require('gulp');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-var newer = require('gulp-newer');
+const newer = require('gulp-newer');
 
 const images = () => {
 	return src('./src/images/*', { encoding: false })
