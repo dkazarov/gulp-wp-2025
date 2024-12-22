@@ -2,6 +2,7 @@
 @use 'normalize';
 @use 'fonts';
 @use 'variables';
+@use 'presets';
 @use 'global';
 
 // Block
@@ -11,10 +12,7 @@
 
 //Vendor
 
-// Presets
-@use './scss-presets/mixsins';
-@use './scss-presets/functions';
-@use './scss-presets/presets';
+
 
 // Components
 @use './scss-components/burger';
