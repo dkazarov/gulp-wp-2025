@@ -70,3 +70,5 @@
          gulp-server-livereload
 
 ### ==Good Luck!==
+
+[![CodeTime Badge](https://img.shields.io/endpoint?style=flat&color=12&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D30741%26project%3Dgulp-wp-2025%26in=0)](https://codetime.dev)
