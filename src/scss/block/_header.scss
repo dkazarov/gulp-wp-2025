@@ -3,13 +3,14 @@
 	top: 0;
 	width: 100%;
 	background-color: skyblue;
+	z-index: 1;
 }
 
 .header__inner {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	padding: 40px 0;
+	padding: 20px 0;
 	width: 100%;
 }
 
@@ -69,9 +70,9 @@ header nav a {
 	header nav li {
 		margin-bottom: 25px;
 	}
-
 	.burger {
 		display: block;
+		z-index: 100 !important;
 	}
 }
 

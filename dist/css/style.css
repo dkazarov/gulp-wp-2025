@@ -364,15 +364,8 @@ template {
 
 @font-face {
   font-family: "Ubuntu";
-  src: url("./fonts/Ubuntu-Regular.woff2") format("woff2");
+  src: url("/fonts/Ubuntu-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Ubuntu";
-  src: url("./fonts/Ubuntu-Bolt.woff2") format("woff2");
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -380,7 +373,6 @@ template {
   --container-width: 1400px;
   --container-padding-x: 15px;
   --main-font: "Ubuntu", sans-serif;
-  --second-font: "Inter", sans-serif;
   --main-color: #000;
   --secondary-font-color: #3b2d2d;
   --accent-color: #f00;
@@ -473,19 +465,19 @@ body {
   top: 0;
   width: 100%;
   background-color: skyblue;
+  z-index: 1;
 }
 
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -557,6 +549,7 @@ header nav a {
   }
   .burger {
     display: block;
+    z-index: 100 !important;
   }
 }
 @media (max-width: 414px) {
@@ -569,6 +562,11 @@ header nav a {
     font-size: 30px;
   }
 }
+.hero {
+  position: relative;
+  scroll-margin-top: 90px;
+}
+
 .footer__inner {
   height: 80px;
   width: 100%;
